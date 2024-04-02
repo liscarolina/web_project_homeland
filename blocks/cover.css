@@ -1,0 +1,75 @@
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/cover-background.jpg);
+  width: 100%;
+  max-width: 1184px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.cover:hover {
+  opacity: 0.5;
+}
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover__title {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.0555;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cover__subtitle {
+  max-width: 280px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.222;
+  text-align: center;
+}
+
+.cover__button {
+  width: 198px;
+  height: 48px;
+  font-weight: 600;
+  background-color: #0278fe;
+  font-size: 18px;
+  line-height: 1.21;
+  color: white;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cover__button:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 321px) {
+  .cover {
+    max-height: 254px;
+    background-position: center;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 1.093;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    max-width: 220px;
+  }
+}
